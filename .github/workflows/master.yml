@@ -1,9 +1,11 @@
-name: Publish docker image
+name: Maven Build & Sonar analysis
 
 on:
   push:
     branches:
       - master
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 jobs:
 
